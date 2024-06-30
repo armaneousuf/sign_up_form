@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('utilities/Norse-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* display: flex; */
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --cls-button: #596d48;
+  --cls-input: #e5e7eb;
+  --cls-focus: #4c4cc0;
+  --cls-error: #e72f2fdc;
+  --cls-valid: #4cc04c;
+}
+
+label, input, button {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: calc(100% - 35vh); 
+  width: calc(20% + 155px);
+  background-color: rgba(0, 0, 0, 0.402);
+  padding: 3px;
+
+  p {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Norse Bold';
+  }
+}
+
+.odin_logo {
+  width: 60px;
+}
+
+.left {
+  height: 100%;
+  max-width: 400px;
+}
+
+.bg__img {
+  background-image: url(utilities/leaf.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 30vw;
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  margin: 20px 0 0 80px;
+}
+
+.texts p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.m__top {
+  margin-top: 20px;
+}
+
+.m-top {
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+form {
+  padding: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  width: 100%;;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid var(--cls-input);
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 1px solid var(--cls-focus);
+  /* appearance: none; */
+}
+
+input[type="password"]:invalid,
+input[type="password"]:invalid  {
+  border: 1px solid var(--cls-error);
+}
+
+button {
+  background-color: var(--cls-button);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.link__p a {
+  text-decoration: none;
+  color: var(--cls-button);
+}
+
+.link-text > p {
+  font-size: 18px;
+  margin-top: 20px;
+}

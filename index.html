@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sign Up Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="bg__img">
+      </div>
+      <div class="logo">
+        <img src="utilities/odin-lined.png" alt="a leaf image" class="odin_logo">
+        <p>ODIN</p>
+      </div>
+    </div>
+
+    <!-- CONSTRUCTING RIGHT SIDE  -->
+      <div class="right">
+        <div class="texts">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+          <br>Sign up now to get started.
+          <p class="m__top">You know you want to 😎
+          </p>
+          
+          
+        <div class="form">
+          <form action="">
+            <p class="m-top">Let's do this!</p>
+            <div class="input-container">
+              <div class="input">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" required>
+              </div>
+  
+              <div class="input">
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" required>
+              </div>
+            </div>
+
+           <div class="input-container">
+            <div class="input">
+              <label for="email">Email</label><br>
+              <input type="email" id="email" pattern="^\w*(\-\w)?(\.\w*)?@\w*(-\w*)?\.\w{2,3}(\.\w{2,3})?$" required>
+            </div>
+
+            <div class="input">
+              <label for="phn">Phone Number</label><br>
+              <input type="text" id="phn">
+            </div>
+           </div>
+
+           <div class="input-container">
+            <div class="input">
+              <label for="pwd">Password</label><br>
+              <input type="password" id="pwd" required>
+            </div>
+
+            <div class="input">
+              <label for="pwd">Confirm Password</label><br>
+              <input type="password" id="pwd" required>
+            </div>
+
+           </div>
+          </div>
+           <button type="submit">Create Account</button>
+           <div class="link-text">
+            <p class="link__p">Already have an account? <a href="#">Log in</a></p>
+           </div>
+          </form>
+          
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
